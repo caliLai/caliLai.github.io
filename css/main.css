@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@font-face {
+	font-family:		geoSansLight;
+	src:				url("./../fonts/geoSansLight.ttf");
+}
+/* tag selectors */
+body {
+	background-color:	#FDFFFC;
+	color:				#24293D;
+
+	font-family: 		geoSansLight;
+	font-size: 			50px;
+}
+h1 {
+	font-family: 		"Courier Prime";
+	font-size:			70px;
+}
+
+/* classess */
+.middle {
+	position: absolute;
+	top: 50%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+#picThing {
+	width: 300px;
+	height: 500px;
+
+	background-color: #FFB65C;
+
+	margin-top: 10%;
+	margin-left: 60%;
+
+	z-index: -1;
+}
