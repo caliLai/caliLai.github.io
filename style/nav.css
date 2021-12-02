@@ -1,0 +1,33 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+	margin: 0;
+
+	font-size: 2rem;
+}
+nav a {
+	color: #ECECEC;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #FFBC6C;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+
+}
+li {
+	display: inline;
+	padding: 16px 16px;
+
+}
+
+
+
+/* #logo:hover {
+	fill:#FFBC6C;
+} */

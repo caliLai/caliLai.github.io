@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton&family=Roboto:wght@100;400&display=swap');
+
+body {
+	background-color: #3D4043;
+	color: #ECECEC;
+
+	font-family: Roboto;
+	font-size: 1rem;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 100px repeat(3, 1fr) 100px;
+	grid-template-rows: repeat(9, 1fr);
+}
+
+h1, h2, h3 {
+	font-family: Lekton;
+}
+h1 {
+	font-size: 4rem;
+}
+h2 {
+	font-size: 3.5rem;
+}
+
+a, clicked {
+	color: #ECECEC;
+	text-decoration: underline;
+}
+a:hover {
+	color: #FFBC6C;
+}
+a:active {
+	color: #888A8F;
+}
+
+.orange-text {
+	color: #FFBC6C;
+}
+.center-text {
+	text-align: center;
+	grid-column: 3/4;
+}
+
+#me {
+	grid-column: 2/4;
+	grid-row: 2/3;
+}
+#more {
+	grid-column: 3/5;
+	grid-row: 4/5;
+	text-align: right;
+}
+#about {
+	grid-column-start: 2;
+	grid-row-start: 6;
+}
+::selection {
+	color: #3D4043;
+	background-color: #FFBC6C;
+}
