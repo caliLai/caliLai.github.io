@@ -1,11 +1,19 @@
 nav {
 	display: flex;
 	justify-content: space-between;
+	position: sticky;
+	top:0;
 
 	align-items: center;
 	margin: 0;
 
 	font-size: 2rem;
+
+	backdrop-filter: blur(5px);
+
+	border-bottom: solid;
+	border-color: #888A8F;
+	border-width: 1px;
 }
 nav a {
 	color: #ECECEC;
@@ -26,8 +34,6 @@ li {
 
 }
 
-
-
-/* #logo:hover {
-	fill:#FFBC6C;
-} */
+#logo {
+	padding-left: 30px;
+}
