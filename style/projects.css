@@ -1,20 +1,106 @@
+main {
+	grid-template-rows: none;
+	row-gap: 100px;
+}
+img {
+	max-width: 400px;
+	max-height: 250px;
+}
+h2 {
+	margin-bottom: 5px;
+}
+@keyframes heart {
+	0% {bottom: 0}
+	25% {bottom: 10px;}
+	50% {bottom: 20px;}
+	75% {bottom: 10px;}
+	100% {bottom: 0;}
+}
+.tag {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FFBC6C;
+
+	color: #FFBC6C;
+
+	padding: 2px;
+}
+.grey {
+	filter: invert(100) grayscale(100);
+}
+.grey:hover {
+	filter: none;
+}
 .p1 {
 	grid-column: 2/3;
 	grid-row: 2/4;
 }
-
 .p2 {
 	grid-column: 4/5;
-	grid-row: 5/7;
+	grid-row: 4/6;
+}
+.p3 {
+	grid-column: 2/3;
+	grid-row: 6/8;
+}
+.p4 {
+	grid-column: 2/3;
+	grid-row: 8/10;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+.p5 {
+	grid-column: 3/4;
+	grid-row: 8/10;
+	padding-left: 10%;
+	padding-right: 10%;
+
+}
+.p6 {
+	grid-column: 4/5;
+	grid-row: 8/10;
+
 }
 
 #project-img-1 {
 	grid-column: 3/5;
 	grid-row: 2/4;
 
-	background-color: #FFF1F5;
+	/* background-color: #FFF1F5; */
 
 	justify-self: center;
 	align-self: center;
 	padding: 30px;
+
+}
+#project-img-1:hover > #heart {
+	position: relative;
+	animation-name: heart;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+#project-img-2 {
+	grid-column: 2/4;
+	grid-row: 4/6;
+
+	justify-self: center;
+	align-self: center;
+	padding: 30px;
+
+	/* background-color: #ECECEC; */
+}
+#project-img-3 {
+	grid-column: 3/5;
+	grid-row: 6/8;
+
+	justify-self: center;
+	align-self: center;
+	padding: 30px;
+
+	/* background-color: #ECECEC; */
+}
+#discord {
+	width: 250px;
 }

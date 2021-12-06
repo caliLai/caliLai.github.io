@@ -6,21 +6,24 @@
 		<link rel="stylesheet" href="../style/index.css">
 		<link rel="stylesheet" href="../style/nav.css">
 		<link rel="stylesheet" href="../style/projects.css">
+		<script src="../src/nav.js"></script>
+
 	</head>
 	<body>
 		<nav>
-			<div>
+			<div><a href="../index.html">
 				<svg id="logo" width="96" height="150" viewBox="0 0 129 202" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M1 101C1.00001 127.522 12.244 152.957 32.2584 171.711C35.7935 175.023 39.5511 178.079 43.4983 180.866C61.8983 193.857 84.4175 201 107.723 201H128V180.866H107.723C85.1169 180.866 63.4369 172.452 47.4522 157.474C31.4675 142.496 22.4874 122.182 22.4874 101C22.4874 79.8182 31.4675 59.5039 47.4522 44.5261C63.4369 29.5483 85.1168 21.1339 107.723 21.1338L107.723 1C79.418 1.00001 52.2727 11.5357 32.2583 30.2893C12.2439 49.043 0.999994 74.4784 1 101Z" fill="#ECECEC"/>
 				<path d="M107.723 1C79.418 1.00001 52.2727 11.5357 32.2583 30.2893C12.2439 49.043 0.999994 74.4784 1 101C1.00001 127.522 12.244 152.957 32.2584 171.711C35.7935 175.023 39.5511 178.079 43.4983 180.866M107.723 1L107.723 21.1338M107.723 1H128V180.866M107.723 21.1338C85.1168 21.1339 63.4369 29.5483 47.4522 44.5261C31.4675 59.5039 22.4874 79.8182 22.4874 101C22.4874 122.182 31.4675 142.496 47.4522 157.474C63.4369 172.452 85.1169 180.866 107.723 180.866M107.723 21.1338L107.723 180.866M107.723 180.866H128M128 201H1V180.866H43.4983M128 201V180.866M128 201H107.723C84.4175 201 61.8983 193.857 43.4983 180.866" stroke="#ECECEC" stroke-width="2"/>
 				</svg>
+				</a>
 			</div>
 			<div>
 				<ul>
 					<li><a href="../index.html">Home</a></li>
 					<li><a href="../index.html#about">About</a></li>
-					<li><a href="">Projects</a></li>
-					<li><a href="">Contact</a></li>
+					<li class="orange-underline"><a href="">Projects</a></li>
+					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -29,21 +32,25 @@
 		<main>
 			<div class="p1">
 				<h2>irl_Dater</h2>
+				May 2021
+				<span class="tag">Group Project</span>
+				<span class="tag">BCIT IDSP 2380</span>
 				<p>
 					A dating sim inspired dating app! Match with other
 					users and earn points with them to redeem coupons for
 					dates.
 				</p>
 				<p>
-					<h4>Techstack:</h4>
-					NodeJS, ExpressJS, MySQL, JQuery, HTML, CSS, Git,
-					Github, Trello, Heroku
+					<h4>Techstack</h4>
+					NodeJS, ExpressJS, MySQL, JQuery, EJS, CSS, Git,
+					Github, Trello, Heroku, AWS S3 Bucket
 				</p>
-				<a href="">Github</a> <a href="">Demo it here</a>
+				<a href="https://github.com/kevtrng/irl_Dater/commits?author=caliLai" target="_blank">Github</a>
+				<a href="https://irl-dater.herokuapp.com/" target="_blank">Demo it here</a>
 			</div>
-			<div id="project-img-1">
-				<svg width="150" height="64" viewBox="0 0 82 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				<rect x="2.25em" width="81.018" height="63.8095" fill="url(#pattern0)" id = "heart" />
+			<div id="project-img-1" class="grey">
+				<svg id = "heart" width="150" height="64" viewBox="0 0 82 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<rect x="2.25em" width="81.018" height="63.8095" fill="url(#pattern0)" />
 				<defs>
 				<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 				<use xlink:href="#image0_1608_1960" transform="translate(0 -0.00201548) scale(0.00199817 0.00252269)"/>
@@ -53,24 +60,107 @@
 				</svg>
 				<br>
 				<img src="../img/irlDater_text_logo.svg" />
-
-
 			</div>
+
 			<div class="p2">
+				<h2>MyLandlord</h2>
+				Dec 2021
+				<span class="tag">Group Project</span>
+				<span class="tag">BCIT IDSP 3380</span>
+
+				<p>
+					Looking to rent in Greater Vancouver but not sure about
+					your landlord? Read other tenants' experiences with
+					them to help you decide which property to choose. Rate your
+					landlord to help other prospective renters as well! Hopefully
+					your security deposit won't be taken from you this time.
+				</p>
+				<p>
+					<h4>Techstack</h4>
+					<span class="orange-text">Typescript, ExpressJS, MySQL, Heroku,</span> NextJS,
+					React, Vercel, Trello, Git, Github
+				</p>
+				<a href="https://github.com/caliLai/myLandlord-backend/commits?author=caliLai" target="_blank">Github[backend]</a>
+				<a href="https://github.com/kevtrng/myLandlord-frontend/commits?author=caliLai" target="_blank">Github[frontend]</a>
+				<a href="https://my-landlord-frontend.vercel.app/" target="_blank">Demo it here</a>
+				<a href="https://hyerincheon.com/myLandlord/" target="_blank">Blog</a>
+			</div>
+			<div id	="project-img-2" class="grey">
+				<img src="../img/myLandlord_logo.png" />
+			</div>
+
+			<div class="p3">
 				<h2>SMMO-BOT</h2>
+				Dec 2020 - Jan 2021
+				<span class="tag">Personal Project</span>
+
 				<p>
 					A Discord bot that uses the SMMO API to alert you 5
 					minutes before a world boss is about to start.
 					Created because my guild leaders would set timers
-					on their phones and ping us in Discord.
+					on their phones and manually ping us in Discord.
 				</p>
 				<p>
-					<h4>Techstack:</h4>
-					NodeJS, DIscordAPI, Git, Github, AWS Linux EC2
+					<h4>Techstack</h4>
+					NodeJS, Git, Github, AWS Linux EC2, DiscordAPI
 				</p>
-				<a href="">Github</a>
-				<a href="https://web.simple-mmo.com/">What even is SMMO?</a>
+				<a href="https://github.com/caliLai/SMMO-BOT" target="_blank">Github</a>
+				<a href="https://web.simple-mmo.com/" target="_blank">What even is SMMO?</a>
+			</div>
+			<div id="project-img-3" >
+				<img class="grey" src="https://web.simple-mmo.com/img/dragon-head-trans.png" />
+				<img class="grey" id="discord" src="../img/Discord-Logo-Color.svg" />
+			</div>
+			<div class="p4">
+				<h2>Have a Byte Caf&eacute;</h2>
+				Dec 2020
+				<span class="tag">Group Project</span>
+				<span class="tag">Design</span>
+				<span class="tag">BCIT MDIA 1106</span>
+				<p>
+					Site design for a mock business. This isn't functional,
+					it's purely for design.<br><br><br>
+				</p>
+				<p>
+					<h4>Techstack</h4>
+					HTML, CSS
+				</p>
+				<a href="https://github.com/caliLai/Have_a_ByteWebsite" target="_blank">Github</a>
+			</div>
+			<div class="p5">
+				<h2>Tic Tac Toe</h2>
+				Oct 2019
+				<span class="tag">Individual Project</span>
+				<span class="tag">KSS Programming 13</span>
+				<p>
+					A simple, console-based tic tac toe for two players.
+				</p>
+				<p>
+					<h4>Techstack</h4>
+					C++
+				</p>
+				<a href="https://github.com/caliLai/simple_ticTacToe" target="_blank">Github</a>
+			</div>
+			<div class="p6">
+				<h2>Flashread Blogs</h2>
+				Oct 2020
+				<span class="tag">Open Source</span>
+				<span class="tag">Article</span>
+				<span class="tag">HacktoberFest</span>
+				<p>
+					Wrote a small article about reading <span class="orange-text">
+					Linux file permissions.</span> Contributed for HacktoberFest 2020.
+				</p>
+				<p>
+					<h4>Techstack</h4>
+					Markdown
+				</p>
+				<a href="https://github.com/flashreads/blogs/commits?author=caliLai">Github</a>
+				<a href="https://theflashreads.com/linux-file-permissions">Demo it here</a>
 			</div>
 		</main>
+		<footer>
+			Built by Calista Lai
+		</footer>
 	</body>
 </html>
