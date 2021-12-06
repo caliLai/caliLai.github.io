@@ -11,6 +11,10 @@ main {
 	grid-template-columns: 100px repeat(3, 1fr) 100px;
 	grid-template-rows: repeat(9, 1fr);
 }
+footer {
+	text-align: center;
+	color: #888A8F;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: Lekton;
@@ -36,11 +40,15 @@ a:active {
 .orange-text {
 	color: #FFBC6C;
 }
+.orange-underline {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #FFBC6C;
+}
 .center-text {
 	text-align: center;
 	grid-column: 3/4;
 }
-
 #me {
 	grid-column: 2/4;
 	grid-row: 2/3;
@@ -53,6 +61,18 @@ a:active {
 #about {
 	grid-column-start: 2;
 	grid-row-start: 6;
+}
+#about2 {
+	grid-column-start: 3;
+	grid-row-start: 7;
+
+	align-self: center;
+}
+#about3 {
+	grid-column-start: 2;
+	grid-row-start: 8;
+
+	align-self: center;
 }
 ::selection {
 	color: #3D4043;

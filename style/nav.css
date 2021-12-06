@@ -11,9 +11,11 @@ nav {
 
 	backdrop-filter: blur(5px);
 
-	border-bottom: solid;
+	/* border-bottom: solid;
 	border-color: #888A8F;
-	border-width: 1px;
+	border-width: 1px; */
+
+	transition: top 0.5s;
 }
 nav a {
 	color: #ECECEC;
