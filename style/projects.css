@@ -104,3 +104,12 @@ h2 {
 #discord {
 	width: 250px;
 }
+@media only screen and (max-width: 800px) {
+	.project-image{
+		display:none;
+	}
+	.p4, .p5 {
+		padding-left: 0;
+		margin-left:0;
+	}
+}
