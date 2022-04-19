@@ -11,6 +11,7 @@ main {
 	grid-template-columns: 100px repeat(3, 1fr) 100px;
 	grid-template-rows: repeat(9, 1fr);
 }
+
 footer {
 	text-align: center;
 	color: #888A8F;
@@ -53,6 +54,10 @@ a:active {
 	grid-column: 2/4;
 	grid-row: 2/3;
 }
+#moi {
+	grid-column: 3/6;
+	grid-row:1/5;
+}
 #more {
 	grid-column: 3/5;
 	grid-row: 4/5;
@@ -78,3 +83,11 @@ a:active {
 	color: #3D4043;
 	background-color: #FFBC6C;
 }
+
+
+@media only screen and (max-width: 800px) {
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+  }
