@@ -94,4 +94,9 @@ a:active {
 	#moi {
 		height: 500px;
 	}
+	#moi img {
+		height:90vh;
+		object-fit: cover;
+		/* max-width: 100vw; */
+	}
 }
