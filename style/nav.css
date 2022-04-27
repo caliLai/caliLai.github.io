@@ -31,6 +31,10 @@ li {
 	padding: 16px 16px;
 
 }
+.isMobile {
+	visibility: hidden;
+	display:none;
+}
 
 #logo {
 	padding-left: 30px;
@@ -40,15 +44,32 @@ li {
 @media only screen and (max-width: 800px) {
 	nav {
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
+
+		z-index: 1;
 
 		position:fixed;
+		right:0;
 
 		height:100vh;
-
-		transition: right 0.5s;
+		display:none;
 	}
+
 	li {
 		display: block;
+	}
+	.isMobile {
+		display: block;
+	}
+	svg.isMobile {
+		visibility: visible;
+		margin-bottom: 10px;
+		
+		position: fixed;
+		top:5px;
+		right:2vw;
+	}
+	#me {
+		margin-top: 5vh;
 	}
 }
