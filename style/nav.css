@@ -11,10 +11,6 @@ nav {
 
 	backdrop-filter: blur(5px);
 
-	/* border-bottom: solid;
-	border-color: #888A8F;
-	border-width: 1px; */
-
 	transition: top 0.5s;
 }
 nav a {
@@ -38,4 +34,21 @@ li {
 
 #logo {
 	padding-left: 30px;
+}
+
+
+@media only screen and (max-width: 800px) {
+	nav {
+		flex-direction: column;
+		justify-content: space-evenly;
+
+		position:fixed;
+
+		height:100vh;
+
+		transition: right 0.5s;
+	}
+	li {
+		display: block;
+	}
 }
