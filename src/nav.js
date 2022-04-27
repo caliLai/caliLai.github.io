@@ -1,13 +1,16 @@
-let prevScrollpos = window.pageYOffset;
+if(window.innerWidth > 800) {
 
-window.onscroll = function() {
-	// console.log(prevScrollpos);
-	let currentScrollPos = window.pageYOffset;
-	if (prevScrollpos > currentScrollPos) {
-		document.getElementsByTagName("nav")[0].style.top = "0";
-	} else {
-		document.getElementsByTagName("nav")[0].style.top = "-160px";
+	let prevScrollpos = window.pageYOffset;
+	
+	window.onscroll = function() {
+		// console.log(prevScrollpos);
+		let currentScrollPos = window.pageYOffset;
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementsByTagName("nav")[0].style.top = "0";
+		} else {
+			document.getElementsByTagName("nav")[0].style.top = "-160px";
+		}
+	
+		prevScrollpos = currentScrollPos;
 	}
-
-	prevScrollpos = currentScrollPos;
 }
