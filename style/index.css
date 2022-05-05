@@ -98,6 +98,9 @@ a:active {
 		display: flex;
 		flex-direction: column;
 	}
+	h2 {
+		font-size: 3rem;
+	}
 	#moi {
 		height: 500px;
 	}
