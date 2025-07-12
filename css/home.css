@@ -1,0 +1,40 @@
+/* id selectors */
+/* body {
+	background-image: url("../images/headshot_drawing.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+} */
+#me {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 40vw;
+	height: 60vh;
+}
+
+#hey {
+	position: fixed;
+	left: 20vw;
+	top: 20vh
+}
+
+#also {
+	position: fixed;
+	left: 25vw;
+	bottom: 35vh;
+	width: 16vw;
+}
+
+#skills {
+	position: fixed;
+	right: 12vw;
+	top: 42vh;
+	width: 25vw;
+}
+
+#contact {
+	position: fixed;
+	right: 15vw;
+	bottom: 20vh;
+}

@@ -1,36 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-@font-face {
-	font-family:		geoSansLight;
-	src:				url("./../fonts/geoSansLight.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,200;1,200&display=swap');
+
 /* tag selectors */
 body {
-	background-color:	#FDFFFC;
-	color:				#24293D;
+	background-color: #2d2d2d;
+	color: #FFFFFF;
 
-	font-family: 		geoSansLight;
-	font-size: 			50px;
+	font-family: "Roboto";
+	font-size: 20px;
+
+	max-height: 100vh;
 }
-h1 {
-	font-family: 		"Courier Prime";
-	font-size:			70px;
+
+a {
+	color: #FFFFFF;
+
+	font-family: "Roboto";
+	font-size: 20px;
 }
 
 /* classess */
-.middle {
-	position: absolute;
-	top: 50%;
-	margin-left: 20%;
-	margin-right: 20%;
+.flex {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 40vw;
+	height: 100vh;
+	gap: 30px;
 }
-#picThing {
-	width: 300px;
-	height: 500px;
 
-	background-color: #FFB65C;
+.orange {
+	color: #E8C5AC;
+}
 
-	margin-top: 10%;
-	margin-left: 60%;
+.lekton {
+	font-family: "Lekton";
+	font-size: 2em;
+}
 
-	z-index: -1;
+.box {
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 1px;
+	background-color: #2d2d2d;
+	padding: 0.5em;
+	width: fit-content;
+}
+.navText {
+	font-size: 48px;
+	text-decoration: none;
 }
